@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>SkyWay Tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>SkyWay Tutorial</h1>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <p class="col-form-label">自分のID: <span id="my-id"></span></p>
+                </div>
+                <video id="my-video" width="100%" autoplay muted playsinline></video>
+            </div>
+
+            <div class="col-6" id="their-media-area">
+                <div class="form-group row">
+                    <label class="col-3 col-form-label" for="room-name">roomID: </label>
+                    <div class="col-7">
+                        <input id="room-name" class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-primary" id="join">参加</button>
+                    </div>
+                </div>
+                <div id="their-media-area"></div>
+                <div id="button-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@skyway-sdk/room@0.2.0-beta.15/dist/skyway_room-0.2.0-beta.15.js"></script>
+    <script src="assets/js/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

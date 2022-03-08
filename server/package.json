@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "dependencies": {
+        "@types/node": "*",
+        "ts-node": "*",
+        "@types/express": "*",
+        "express": "*",
+        "@skyway-sdk/token": "*",
+        "@types/uuid": "*",
+        "uuid": "*"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "start": "npx ts-node index.ts"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    }
+}

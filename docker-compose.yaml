@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  api:
+    container_name: "node_app"
+    build: .
+    restart: always
+    tty: true
+    ports:
+      - 80:80
